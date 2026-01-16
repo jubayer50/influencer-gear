@@ -113,6 +113,23 @@ nav li a {
   max-width: 440px;
 }
 
+/* companies related style */
+#companies-section {
+  margin-top: 70px;
+}
+
+#companies-section .companies-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+#companies-section .companies-container img {
+  max-width: ;
+}
+
 /* another section */
 
 /* responsive style */
@@ -160,6 +177,11 @@ nav li a {
     width: 100%;
   }
 
+  /* companies related style */
+  #companies-section {
+    margin-top: 50px;
+  }
+
   /* another section */
 }
 
@@ -191,6 +213,10 @@ nav li a {
 
   #hero-section .hero-content p {
     margin-bottom: 28px;
+  }
+
+  #companies-section {
+    margin-top: 60px;
   }
 
   /* another section */
