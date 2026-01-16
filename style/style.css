@@ -9,8 +9,10 @@
 :root {
   --primary_font: "Poppins", sans-serif;
   --secondary_font: "Inter", sans-serif;
+  --white: #ffffff;
   --gray_dark: #3a3a3a;
   --gray_light: #787885;
+  --dark_pink: #e02c6d;
 }
 
 /* common css style */
@@ -39,7 +41,7 @@ nav .bar-icon {
 }
 
 nav h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
@@ -58,7 +60,60 @@ nav li a {
 /* hero section related style */
 #hero-section {
   margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 120px;
 }
+
+#hero-section .hero-content {
+  max-width: 582px;
+}
+
+#hero-section .hero-content h2 {
+  font-family: var(--primary_font);
+  font-weight: bold;
+  line-height: 70px;
+  font-size: 3.25rem;
+  color: var(--gray_dark);
+  margin-bottom: 18px;
+}
+
+#hero-section .hero-content p {
+  font-family: var(--primary_font);
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 38px;
+}
+
+#hero-section .hero-content button {
+  font-family: var(--primary_font);
+  font-weight: bold;
+  color: var(--white);
+  border: none;
+  background-color: var(--dark_pink);
+  padding: 10px 24px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#hero-section .hero-content button i {
+  margin-left: 5px;
+}
+
+#hero-section .hero-img {
+  max-width: 700px;
+  background-image: url(../images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: 418px;
+}
+
+#hero-section .hero-img img {
+  max-width: 440px;
+}
+
+/* another section */
 
 /* responsive style */
 /* for mobile device */
@@ -68,7 +123,7 @@ nav li a {
   }
 
   nav h2 {
-    font-size: 17px;
+    font-size: 1.06rem;
   }
 
   nav ul li:not(:last-child) {
@@ -76,12 +131,42 @@ nav li a {
   }
 
   /* banner related style */
+  #hero-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 20px;
+  }
+
+  #hero-section .hero-content h2 {
+    font-size: 1.75rem;
+    line-height: 1.5;
+    margin-bottom: 18px;
+  }
+
+  #hero-section .hero-content p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 22px;
+  }
+
+  #hero-section .hero-img {
+    width: 257px;
+    height: 257px;
+    object-fit: cover;
+    background-size: 257px;
+  }
+
+  #hero-section .hero-img img {
+    width: 100%;
+  }
+
+  /* another section */
 }
 
 /* for laptop or medium device  */
 @media screen and (min-width: 577px) and (max-width: 992px) {
   nav h2 {
-    font-size: 19px;
+    font-size: 1.18rem;
   }
 
   nav ul {
@@ -94,4 +179,19 @@ nav li a {
   }
 
   /* banner related style */
+  #hero-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 50px;
+  }
+
+  #hero-section .hero-content h2 {
+    font-size: 2.8rem;
+  }
+
+  #hero-section .hero-content p {
+    margin-bottom: 28px;
+  }
+
+  /* another section */
 }
