@@ -12,7 +12,10 @@
   --white: #ffffff;
   --gray_dark: #3a3a3a;
   --gray_light: #787885;
+  --gray_50: #787885;
   --dark_pink: #e02c6d;
+  --dark_blue: #18191f;
+  --black: #000000;
 }
 
 /* common css style */
@@ -126,8 +129,84 @@ nav li a {
   flex-wrap: wrap;
 }
 
-#companies-section .companies-container img {
-  max-width: ;
+/* popular-collection related style */
+#popular-collection {
+  margin-top: 100px;
+}
+
+#popular-collection h2 {
+  font-family: var(--primary_font);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--gray_dark);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#popular-collection .collection-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+#popular-collection .collection-boxes .collection-box {
+  max-width: 330px;
+  padding: 15px;
+  box-shadow: 0 0 40px 0 #00000015;
+  border-radius: 5px;
+}
+
+#popular-collection .collection-boxes .collection-box img {
+  width: 100%;
+}
+
+#popular-collection .collection-boxes .collection-box h3 {
+  font-family: var(--primary_font);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--dark_blue);
+  margin-bottom: 8px;
+}
+
+#popular-collection .collection-boxes .collection-box h4 {
+  font-family: var(--secondary_font);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
+#popular-collection .collection-boxes .collection-box p {
+  font-family: var(--secondary_font);
+  font-size: 0.87rem;
+  font-weight: bold;
+  color: var(--gray_50);
+  line-height: 1.5;
+}
+
+#popular-collection .collection-boxes .collection-box .star-ratting ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-family: var(--primary_font);
+  color: #5e6366;
+  font-weight: bold;
+}
+
+#popular-collection .collection-boxes .collection-box .star-ratting ul li img {
+  width: 16px;
+  height: 16px;
+}
+
+#popular-collection
+  .collection-boxes
+  .collection-box
+  .star-ratting
+  ul
+  li:last-child {
+  margin-left: 10px;
 }
 
 /* another section */
@@ -182,6 +261,15 @@ nav li a {
     margin-top: 50px;
   }
 
+  /* popular-collection related style */
+  #popular-collection {
+    margin-top: 60px;
+  }
+
+  #popular-collection .collection-boxes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   /* another section */
 }
 
@@ -217,6 +305,15 @@ nav li a {
 
   #companies-section {
     margin-top: 60px;
+  }
+
+  /* popular-collection related style */
+  #popular-collection {
+    margin-top: 60px;
+  }
+
+  #popular-collection .collection-boxes {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   /* another section */
